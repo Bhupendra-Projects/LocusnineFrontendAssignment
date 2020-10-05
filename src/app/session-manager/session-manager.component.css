@@ -1,0 +1,7 @@
+.showuser__left{
+  justify-content: start;
+  margin-left: 30px;
+  }
+  .showuser__left img{
+    background-color: black;
+  }

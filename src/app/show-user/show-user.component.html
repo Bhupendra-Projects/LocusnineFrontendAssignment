@@ -1,0 +1,42 @@
+<div class="showContent">
+  <div class="showuser__left">
+    <img src="../../assets/icons/ico_users.svg">Users
+  </div>
+  <div class="showuser__right">
+    <div class="showuser__rightinput">
+      <input type="text" placeholder="Search" name="search">
+      <button><img src="../../assets/icons/ico_search.svg"></button>
+    </div>
+    <div><button class="showuser__rightaddUserBtn"><img src="../../assets/icons/ico_add.svg" (click)="showModal()">Add User</button></div>
+  </div>
+</div>
+<div>
+  <div class="showuser__table">
+    <table>
+      <thead>
+      <tr>
+        <th>NAME</th>
+        <th>EMAIL</th>
+        <th>ROLE TYPE</th>
+        <th>STATUS</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of userList">
+        <td>{{ user.Name }}</td>
+        <td>{{ user.Email }}</td>
+        <td>{{ user.RoleType == 1 ? 'Admin' : 'Customer Executive' }}</td>
+        <td><img [src]="'../../assets/icons/ico_' + user.Status.toLowerCase() + '.svg'">
+          {{ user.Status }}</td>
+        <td>
+          <img src="../../assets/icons/ico_edit.svg" title="Edit User" class="edit">
+          <img src="../../assets/icons/Delete.png" (click)="deleteUser(user.id)" title="Delete User" class="delete">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+

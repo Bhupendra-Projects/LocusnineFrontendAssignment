@@ -1,0 +1,77 @@
+*{
+  font-family: sans-serif;
+}
+.bg-modal{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content{
+  width: 400px;
+  height: 500px;
+  background-color:white;
+  border-radius: 4px;
+}
+.closebutton{
+  margin-left: 350px;
+  border: none;
+  background-color: transparent;
+  margin-top: 20px;
+  cursor: pointer;;
+}
+h2{
+  font-weight: 400;
+  font-size: 2rem;
+  margin-left: 30px;
+}
+input{
+  width: 80%;
+  height: 25px;
+  display: block;
+  margin-left: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 1px solid silver;
+  border-radius: 3px;
+  padding: 8px;
+}
+.roletype{
+  display: flex;
+  align-items: center;
+}
+.status{
+  display: flex;
+  align-items: center;
+
+}
+.adduser{
+  background-color: orange;
+  border: none;
+  color: white;
+  width: 85%;
+  height: 40px;
+  display: block;
+  margin-left: 30px;
+  margin-top: 15px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  font-size: 20px;
+}
+.status input{
+  color: orange !important;
+}
+.roletype span
+{
+  margin-left: 30px;
+}
+.status span
+{
+  margin-left: 30px;
+}
+

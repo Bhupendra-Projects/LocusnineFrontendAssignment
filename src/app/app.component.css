@@ -1,0 +1,40 @@
+.app__container{
+  display: flex;
+  padding-top: 10px;
+  align-items: center;
+  background-color: #212622;
+  height: 70px;
+}
+.app__left{
+  display: flex;
+  flex: 50%;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+.app__right{
+  display: flex;
+  flex: 50%;
+  margin-right: 20px;
+  justify-content: flex-end;
+
+}
+.app__rightDownArrow{
+  margin-right: 20px;
+  margin-left: 60px;
+}
+.app__rightImg{
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.app__rightName{
+  color: white;
+}
+.menu-button{
+  color: white;
+  background-color: transparent;
+  border: 0ch;
+}
+.app__left button img{
+  margin-right: 10px;
+}
+

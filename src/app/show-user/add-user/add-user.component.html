@@ -1,0 +1,31 @@
+<div class="bg-modal">
+  <div class="modal-content">
+    <button class="closebutton" (click)="onClose()">
+      <img src="../../assets/icons/ico_close.svg" alt="" />
+    </button>
+    <h2>Edit User</h2>
+    <form action="">
+      <input type="text" placeholder="Name" />
+      <input type="text" placeholder="Email" />
+      <div class="roletype">
+        <div><input type="radio" value="Admin"/></div>
+        <span>Admin</span>
+        <div><input type="radio" value="CustomerExecutive"/></div>
+        <span>Customer Executive</span>
+      </div>
+      <div class="status">
+        <div><input type="radio" checked="checked" /></div>
+          <span>Active</span>
+
+          <div><input type="radio" /></div>
+          <span>InActive</span>
+
+          <div><input type="radio" /></div>
+          <span>Pending</span>
+
+      </div>
+      <input type="text" placeholder="Mobile Number" />
+      <button class="adduser">Edit USER</button>
+    </form>
+  </div>
+</div>
